@@ -5,23 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container animate__animated animate__fadeIn animate_delay-4">
+        <nav>
+            <input type="checkbox" id="check" onclick="abreNavbar()">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo" onclick="scroolTop()">
+                <span>LOGO</span>
+            </div>
+
+            <ul>
+                <li><a href="#sobre" onclick="fechaNavbar()">Sobre</a></li>
+                <li><a href="#squad" onclick="fechaNavbar()">Produtos</a></li>
+                <li><a href="#contatos"onclick="fechaNavbar()">Contato</a></li>
+            </ul>
+        </nav>
         <section class="capa">
             <div class="capa__elementoImagem">
                 <div class="elementoImagem__esquerdo">
                     <figure class="img__capa">
 
-                        <img src="https://images.pexels.com/photos/3838690/pexels-photo-3838690.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                        <img src="./assets/capa.jpeg" alt="">
                     </figure>
                 </div>
                 <div class="elementoImagem__direito">
                     <div class="texto__direito__capa">
                         <span>
-                            lorem <br> a ipsun <br> met
+                            a vida <br> é um tecido <br> bordado 
                         </span>
                     </div>
                 </div>
@@ -36,75 +58,145 @@
 
         </section>
         <section class="sobre">
-            <div class="sobre__textos">
-                <div class="title__sobre">
-                    <h1>your company here</h1>
+                <div class="sobre__textos">
+                    <div class="title__sobre">
+                        <h1>your company here</h1>
+                    </div>
+                    <div class="text__sobre">
+                        <span>Aenean placerat lacinia mi, vel pretium quam. 
+                            Maecenas feugiat pellentesque mollis. Fusce nec 
+                            augue sit amet lacus dignissim tincidunt. Aliquam 
+                            ornare sem risus, id condimentum mi consequat ac. 
+                            Aenean sed neque tincidunt, vehicula massa in, consectetur justo.</span>
+                    </div>
                 </div>
-                <div class="text__sobre">
-                    <span>Aenean placerat lacinia mi, vel pretium quam. 
-                        Maecenas feugiat pellentesque mollis. Fusce nec 
-                        augue sit amet lacus dignissim tincidunt. Aliquam 
-                        ornare sem risus, id condimentum mi consequat ac. 
-                        Aenean sed neque tincidunt, vehicula massa in, consectetur justo.</span>
+                <div class="sobre__img">
+                    <figure class="img__sobre">
+                        <img src="https://images.pexels.com/photos/5660375/pexels-photo-5660375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 500w, https://images.pexels.com/photos/5660375/pexels-photo-5660375.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 1000w" alt="">
+                    </figure>
                 </div>
-            </div>
-            <div class="sobre__img">
-                <figure class="img__sobre">
-                    <img src="https://images.pexels.com/photos/5660375/pexels-photo-5660375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 500w, https://images.pexels.com/photos/5660375/pexels-photo-5660375.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 1000w" alt="">
-                </figure>
-            </div>
 
         </section>
-        <section class="produtos">
+       
+
+        <section class="produtos__cards">
             <div class="text__produtos">
                 <h1>some products</h1>
             </div>
-            <div class="cards__produtos">
-        
-
-                <div class="card__product">
-                    <figure class="img__card">
-                        <img src="https://images.pexels.com/photos/3772488/pexels-photo-3772488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
-                    </figure>
-                    <div class="text__card">
-                        <span>Lorem ipsun dolor mett</span>
+            <div class="card__prod ">
+                <div class="img__prod">
+                    <div class="img">
+                         <img src="./assets/1.jpeg" alt="">
                     </div>
-                   
-                    <div class="btn__card">
-                        <span>Encomendar <i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="textos__prod">
+                    <div class="titulo__prod">
+                       <div class="t__prod">
+                           <span>Lorem</span>
+                       </div>
+                       <div class="por__prod">
+                           <span>by seto</span>
+                       </div>
+                    </div>
+                    <div class="descricao__prod">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt fugit temporibus doloremque cumque est voluptatum odit blanditiis quidem.</span>
+                    </div>
+                    <div class="footer__prod">
+                        <div class="preco__prod">
+                            <span>R$ 35</span>
+                        </div>
+                        <a href="" class="btn__prod">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card__product">
-                    <figure class="img__card">
-                        <img src="https://images.pexels.com/photos/3772488/pexels-photo-3772488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
-                    </figure>
-                    <div class="text__card">
-                        <span>-Lorem ipsun dolor mett</span>
+            </div>
+
+            <div class="card__prod">
+                <div class="img__prod">
+                    <div class="img">
+                         <img src="./assets/2.jpeg" alt="">
                     </div>
-                   
-                    <div class="btn__card">
-                        <span>Encomendar <i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="textos__prod">
+                    <div class="titulo__prod">
+                       <div class="t__prod">
+                           <span>Lorem</span>
+                       </div>
+                       <div class="por__prod">
+                           <span>by seto</span>
+                       </div>
+                    </div>
+                    <div class="descricao__prod">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt fugit temporibus doloremque cumque est voluptatum odit blanditiis quidem.</span>
+                    </div>
+                    <div class="footer__prod">
+                        <div class="preco__prod">
+                            <span>R$ 35</span>
+                        </div>
+                        <a href="" class="btn__prod">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card__product">
-                    <figure class="img__card">
-                        <img src="https://images.pexels.com/photos/3772488/pexels-photo-3772488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
-                    </figure>
-                    <div class="text__card">
-                        <span>Lorem ipsun dolor mett</span>
+            </div>
+
+            <div class="card__prod">
+                <div class="img__prod">
+                    <div class="img">
+                         <img src="./assets/12.jpeg" alt="">
                     </div>
-                   
-                    <div class="btn__card">
-                        <span>Encomendar <i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="textos__prod">
+                    <div class="titulo__prod">
+                       <div class="t__prod">
+                           <span>Lorem</span>
+                       </div>
+                       <div class="por__prod">
+                           <span>by seto</span>
+                       </div>
+                    </div>
+                    <div class="descricao__prod">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt fugit temporibus doloremque cumque est voluptatum odit blanditiis quidem.</span>
+                    </div>
+                    <div class="footer__prod">
+                        <div class="preco__prod">
+                            <span>R$ 35</span>
+                        </div>
+                        <a href="" class="btn__prod">Comprar</a>
                     </div>
                 </div>
 
             </div>
 
         </section>
+
+        <footer>
+           <div class="conteudo__footer">
+               <div class="redes__sociais">
+                   <div class="text__redes">
+                       <span>Sabe onde nos encontrar?</span>
+                   </div>
+                   <div class="icons__redes marginTopGlobal">
+                       <a href=""><i class="fab fa-facebook-f"></i></a>
+                       <a href=""> <i class="fab fa-twitter"></i></a>
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                   
+                   
+                   </div>
+               </div>
+               <div class="telefones">
+                   <div class="text__telefones">
+                       <span>Fale diretamente conosco</span>
+                   </div>
+                   <div class="telefone__contatos marginTopGlobal">
+                       <span>(24) 00000-0000</span>
+                       <span>lorem@gmail.com</span>
+                   </div>
+               </div>
+
+           </div>
+        </footer>
     </div>
     
+    <script src="./script/script.js"></script>
 </body>
 </html>
